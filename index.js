@@ -12,6 +12,7 @@ Twitter.stream('statuses/filter', { track: 'paranaue' }, function (stream) {
             if (error) throw error;
             console.log('Tweet tweet',tweet);  // Tweet body.
         });
+// var randomAccomplishment  = array[Math.floor(Math.random() * array.length)];
     });
 
     stream.on('error', function (error) {
