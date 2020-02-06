@@ -5,9 +5,12 @@ var secret = require("./config");
 
 var Twitter = new TwitterPackage(secret);
 
-Twitter.get('search/tweets', {q: '#teste', result_type:'recent'}, function(error, tweets, response) {
-    console.log(tweets);
-    tweets.statuses.forEach(function(tweet) {
-        console.log("tweet: " + tweet.text);
+Twitter.stream('statuses/filter', { track: '"ai papai", laranja' }, function (stream) {
+    stream.on('data', function (tweet) {
+        console.log(tweet.text);
     });
- });
+
+    stream.on('error', function (error) {
+        console.log(error.message);
+    });
+});
