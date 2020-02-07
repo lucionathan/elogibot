@@ -8,9 +8,9 @@ var Twitter = new TwitterPackage(secret);
 Twitter.stream('statuses/filter', { track: 'paranaue' }, function (stream) {
     stream.on('data', function (tweet) {
         console.log('Stream: ', tweet.id, '\n', tweet.id_str)
-        Twitter.post('statuses/update', { status: `@${tweet.user.screen_name} parana`, in_reply_to_status_id: tweet.id, auto_populate_reply_metadata: true }, function (error, tweet, response) {
-            if (error) throw error;
-            console.log('Tweet tweet',tweet);  // Tweet body.
+        Twitter.post('statuses/update', { status: 'parana', in_reply_to_status_id: tweet.id_str, auto_populate_reply_metadata: true }, function (error, tweet, response) {
+            if (error) console.log(error);
+            console.log('Tweet ',tweet);  // Tweet body.
         });
 // var randomAccomplishment  = array[Math.floor(Math.random() * array.length)];
     });
