@@ -1,47 +1,43 @@
 {
-    "masculino":{
-        "aparencia":[
-            "tu és lindo", 
-            "vc é lindo",
-            "vc é lindo, amigo",
-            "és lindo, principe", 
-            "vc é lindo, parece o caio castro", 
-            "nananinaninanao, vc é lindo",
-            "vc é perfeito",
-            "vc é perfeito, entre na minha casa e coma toda minha familia",
-            "vc é lindo, venha meter na minha esposa"
-       ],
+    "masculino_aparencia":[
+        "tu és lindo", 
+        "vc é lindo",
+        "vc é lindo, amigo",
+        "és lindo, principe", 
+        "vc é lindo, parece o caio castro", 
+        "nananinaninanao, vc é lindo",
+        "vc é perfeito",
+        "vc é perfeito, entre na minha casa e coma toda minha familia",
+        "vc é lindo, venha meter na minha esposa"
+    ],
 
-       "inteligencia":[
-           "vc é inteligente, meu camarada",
-           "deixe disso, vc é einstein brasileiro",
-           "vc é o homem mais inteligente do mundo isso sim",
-           "ora ora se n é o princeso mais inteligente do mundo todinho",
-           "deixe de se diminuir >:("
-       ]
-    },
+    "masculino_inteligencia":[
+        "vc é inteligente, meu camarada",
+        "deixe disso, vc é einstein brasileiro",
+        "vc é o homem mais inteligente do mundo isso sim",
+        "ora ora se n é o princeso mais inteligente do mundo todinho",
+        "deixe de se diminuir >:("
+    ],
 
-    "feminino":{
-        "aparencia":[
-            "tu és linda", 
-            "vc é linda",
-            "vc é linda, amiga",
-            "és linda, princesa", 
-            "vc é linda, parece o caio castro", 
-            "nananinaninanao, vc é linda",
-            "vc é perfeita",
-            "vc é perfeita, entre na minha casa e coma toda minha familia",
-            "vc é linda, venha meter na minha esposa"
-        ],
- 
-        "inteligencia":[
-            "vc é inteligente, minha consagrada",
-            "deixe disso, vc é a marie curie brasileira",
-            "vc é a mulher mais inteligente do mundo isso sim",
-            "ora ora se n é a princesa mais inteligente do mundo todinho",
-            "deixe de se diminuir >:("
-        ]
-    },
+    "feminino_aparencia":[
+        "tu és linda", 
+        "vc é linda",
+        "vc é linda, amiga",
+        "és linda, princesa", 
+        "vc é linda, parece o caio castro", 
+        "nananinaninanao, vc é linda",
+        "vc é perfeita",
+        "vc é perfeita, entre na minha casa e coma toda minha familia",
+        "vc é linda, venha meter na minha esposa"
+    ],
+
+    "feminino_inteligencia":[
+        "vc é inteligente, minha consagrada",
+        "deixe disso, vc é a marie curie brasileira",
+        "vc é a mulher mais inteligente do mundo isso sim",
+        "ora ora se n é a princesa mais inteligente do mundo todinho",
+        "deixe de se diminuir >:("
+    ],
 
     "suficiencia":[
         "vc é foda",

@@ -24,6 +24,10 @@ function classificaString(tweet){
     return retorno;
 }
 
+function getRandomElogio(elogios) {
+    return elogios[Math.floor(Math.random() * elogios.length)];
+}
+
 
 function getElogio(elogios, classificacao) {
 
@@ -31,29 +35,30 @@ function getElogio(elogios, classificacao) {
 
     switch (classificacao) {
         case "feio":
-            retorno = elogios.masculino.aparencia[Math.floor(Math.random() * elogios.masculino.aparencia.length)];
+            retorno = getRandomElogio(elogios.masculino_aparencia);
             break;
     
         case "burro":
-            retorno = elogios.masculino.inteligencia[Math.floor(Math.random() * elogios.masculino.inteligencia.length)];
+            retorno = getRandomElogio(elogios.masculino_inteligencia); 
             break;
    
         case "feia":
-            retorno = elogios.feminino.aparencia[Math.floor(Math.random() * elogios.masculino.aparencia.length)];
+            retorno = getRandomElogio(elogios.feminino_aparencia); 
             break;
             
         case "burra":
-            retorno = elogios.feminino.inteligencia[Math.floor(Math.random() * elogios.masculino.inteligencia.length)];
+            retorno = getRandomElogio(elogios.feminino_inteligencia); 
             break;
             
         case "insuficiente":
-            retorno = elogios.insuficiente[Math.floor(Math.random() * elogios.insuficiente.length)];
+            retorno = getRandomElogio(elogios.suficiencia); 
             break;
-                }
+        }
     
     return retorno;
 
 }
+
 
 Twitter.stream('statuses/filter', { track: Tweets}, function (stream) {
     stream.on('data', function (tweet) {
